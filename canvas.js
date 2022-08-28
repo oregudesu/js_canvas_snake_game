@@ -501,4 +501,4 @@ function animate() {
     game.update();
     setTimeout(() => requestAnimationFrame(animate), 250);
 }
-// animate();
+animate();
