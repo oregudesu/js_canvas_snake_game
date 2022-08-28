@@ -314,7 +314,7 @@ function Game() {
     this.apple_count = 0;
     this.max_apple_count = 1;
     this.amanitas = [];
-    this.max_amanita_count = 10;
+    this.max_amanita_count = 15;
     this.is_unlocked = false;
 
     this.init = () => {
@@ -463,7 +463,7 @@ function Game() {
         }
 
         for (let i = 0; i < to_remove.length; i++) {
-            this.amanitas.splice(to_remove[i], to_remove[i] + 1);
+            this.amanitas.splice(to_remove[i], 1);
         }
 
         // generate new amanita
